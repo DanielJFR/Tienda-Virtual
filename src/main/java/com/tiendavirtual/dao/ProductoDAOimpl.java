@@ -28,8 +28,6 @@ public class ProductoDAOimpl implements ProductoDAO{
 	@Transactional
 	public void updateProducto(Producto producto) {
 		 Session session=sessionFactory.getCurrentSession();
-		 
-		 System.out.println("id de producto es:"+producto.getId());
 		 session.saveOrUpdate(producto);	 
 	}
 	
